@@ -1,0 +1,135 @@
+  "commentAnchors.tags.anchors": {
+    "tag": "ANCHOR",
+    "iconColor": "default",
+    "backgroundColor": "#85c023",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "LINK",
+    "iconColor": "default",
+    "backgroundColor": "#e17076",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "file",
+    "borderRadius": 6
+  },
+  {
+    "tag": "TODO",
+    "iconColor": "blue",
+    "backgroundColor": "#3ea8ff",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "FIXME",
+    "iconColor": "blue",
+    "backgroundColor": "#ff8003",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "STUB",
+    "iconColor": "purple",
+    "backgroundColor": "#BA68C8",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "file",
+    "borderRadius": 6
+  },
+  {
+    "tag": "NOTE",
+    "iconColor": "orange",
+    "backgroundColor": "#ffd166",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "file",
+    "borderRadius": 6
+  },
+  {
+    "tag": "G-NOTE",
+    "iconColor": "orange",
+    "backgroundColor": "#FFB300",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "borderRadius": 6
+  },
+  {
+    "tag": "DONE",
+    "iconColor": "green",
+    "backgroundColor": "#218843",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "file",
+    "borderRadius": 6
+  },
+  {
+    "tag": "SECTION",
+    "iconColor": "blurple",
+    "backgroundColor": "#ec4f46",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "BLOCK",
+    "iconColor": "blurple",
+    "backgroundColor": "#ffdb00",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "STYLES-SECTION",
+    "iconColor": "blurple",
+    "backgroundColor": "#fc70a1",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "STYLES",
+    "iconColor": "blurple",
+    "backgroundColor": "#fc70a1",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
+  {
+    "tag": "STYLE",
+    "iconColor": "blurple",
+    "backgroundColor": "#ff944c",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": false,
+    "borderRadius": 6
+  },
+  {
+    "tag": "MEDIA",
+    "iconColor": "blurple",
+    "backgroundColor": "#2a7fd1",
+    "highlightColor": "#333333",
+    "styleComment": true,
+    "scope": "workspace",
+    "isRegion": true,
+    "borderRadius": 6
+  },
