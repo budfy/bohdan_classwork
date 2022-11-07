@@ -143,50 +143,55 @@
   font-display: swap;
 }
 
-html{
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+html {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  }
+}
 
-body{
+body {
   font-family: inherit;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
 }
 
-body *{
+body * {
   font-family: inherit;
   background-color: var(--color__grey-1);
 }
 
-button, a{
+button,
+a {
+  cursor: pointer;
   transition: all ease-in-out 0.25s;
 }
 
 /* STYLES-SECTION: color scheme */
 
-:root{
---color__text-1: #333333;
---color__text-2: #444444;
---color__title: #45525B;
---color__icon: #3A4443;
---color__orange-1: #FF8A63;
---color__grey-1: #FAFAFC;
---color__grey-2: #CACCD1;
---color__grey-3: #292C32;
---color__bg: rgba(250, 250, 252, 0.78);
---color__white: #ffffff;
---color__black: #000000;
+:root {
+  --color__text-1: #333333;
+  --color__text-2: #444444;
+  --color__title: #45525b;
+  --color__icon: #3a4443;
+  --color__orange-1: #ff8a63;
+  --color__orange-2: #f0511c;
+  --color__grey-1: #fafafc;
+  --color__grey-2: #caccd1;
+  --color__grey-3: #292c32;
+  --color__grey-4: #444444;
+  --color__yellow:#ffe736;
+  --color__bg: rgba(250, 250, 252, 0.78);
+  --color__white: #ffffff;
+  --color__black: #000000;
 
---shadow-1: 0px 3px 15px rgba(0, 0, 0, 0.03)
+  --shadow-1: 0px 3px 15px rgba(0, 0, 0, 0.03);
 }
 
 /* !STYLES-SECTION */
 
 /* STYLES-SECTION:page */
 
-.page-wrapper{
+.page-wrapper {
   width: 100%;
   max-width: 100vw;
   height: 100%;
@@ -194,26 +199,188 @@ button, a{
   display: flex;
   flex-direction: column;
 }
-.page-inner{
+.page-inner {
   flex: 1 1 auto;
+  position: relative;
 }
-.top-bar{
+.top-bar {
+  position: sticky;
 }
-.header{
-
+.header {
 }
-.main{
+.main {
 }
-.footer{
+.footer {
   flex: 0 0 auto;
   width: 100%;
 }
 
-.container{
+.container {
   width: 100%;
   height: 100%;
   max-width: 1920px;
   margin: 0 auto;
 }
 
+.container.--s {
+  padding: 0 2.75rem;
+  max-width: 1760px;
+}
+
 /* !STYLES-SECTION:page */
+
+/* STYLES-SECTION: top-bar */
+.top-bar {
+  background-color: var(--color__grey-1);
+  padding: 1rem 0;
+}
+
+.top-bar__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__logo {
+  width: 6.25rem;
+  height: 2.25rem;
+  color: var(--color__title);
+}
+
+.top-bar__logo:visited {
+  color: var(--color__title);
+}
+
+.top-bar__logo:hover {
+  color: var(--color__orange-1);
+}
+.top-bar__logo:focus {
+  outline: transparent;
+}
+.top-bar__logo:focus-visible {
+  color: var(--color__orange-2);
+}
+.top-bar__logo:active {
+  color: var(--color__orange-1);
+}
+
+.top-bar__list {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.top-bar__list-item {
+}
+
+.top-bar__list-item + .top-bar__list-item {
+  margin-left: 3rem;
+}
+
+.top-bar__link {
+  text-decoration: none;
+  color: var(--color__text-2);
+  line-height: 1;
+}
+
+.top-bar__link:visited {
+  color: var(--color__title);
+}
+
+.top-bar__link:hover {
+  color: var(--color__orange-1);
+}
+
+.top-bar__link:focus {
+  outline: transparent;
+}
+
+.top-bar__link:focus-visible {
+  text-decoration: underline;
+}
+.top-bar__link:active {
+  color: var(--color__orange-2);
+}
+
+.top-bar__btn {
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0.5rem;
+  border: none;
+  background-color:transparent;
+  appearance: none;
+  color: var(--color__grey-4);
+  margin-left: 3rem;
+  position: relative;
+}
+
+.top-bar__btn:hover {
+color: var(--color__orange-1);
+}
+.top-bar__btn:focus {
+  outline: transparent;
+}
+.top-bar__btn:focus-visible {
+  color: var(--color__orange-2);
+}
+.top-bar__btn:active {
+color: var(--color__yellow);
+}
+
+.top-bar__btn-icon {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.top-bar__btn.--mobile {
+  padding: 0;
+  height: 2rem;
+  display: none;
+
+}
+@media screen and (max-width: 1023px){
+  .top-bar__btn.--mobile{
+  display: block;
+  }
+}
+
+.top-bar__burger-row {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 0.25rem;
+  background-color: currentColor;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+}
+
+.top-bar__burger-row:nth-child(2){
+  top: 50%;
+  transform: translateY(-20%);
+}
+.top-bar__burger-row:nth-child(3){
+  top: 100%;
+}
+/* !STYLES-SECTION: top-bar */
+
+/* STYLES-SECTION: logo */
+.logo {
+  display: block;
+}
+
+.logo__inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+/* !STYLES-SECTION: logo */
