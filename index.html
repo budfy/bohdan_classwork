@@ -90,7 +90,8 @@
                   <video class="header__video-content"
                          src="assets/video/header_bg.mp4"
                          autoplay
-                         muted></video>
+                         muted
+                         loop></video>
                 </div>
                 <div class="header__wrapper">
                   <div class="container --xl">
@@ -140,7 +141,89 @@
 
           </a>
           <div class="footer__inner">
-
+<div class="footer__menu">
+  <div class="footer__menu-item">
+    <p class="footer__menu-title">Pages</p>
+    <ul class="footer__menu-list">
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Start</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Listings</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Listings alt. 2</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Contact</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link"> Legal</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__menu-item">
+    <p class="footer__menu-title">Company</p>
+    <ul class="footer__menu-list">
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">About</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Our team</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Newsroom</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__menu-item">
+    <p class="footer__menu-title">Utility</p>
+    <ul class="footer__menu-list">
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Instructions</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Style guide</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Licenses</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">Changelog</a>
+      </li>
+      <li class="footer__list-item">
+        <a href="#"
+           class="footer__menu-link">404</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<form class="footer__subscribe">
+  <h3 class="footer__subscribe-title">Newsletter</h3>
+  <p class="footer__subscribe-text">Subscribe to our (infrequent) newsletter where we share news about upcoming listings and projects.</p>
+  <div class="footer__subscribe-wrapper">
+    <input type="text"
+           class="footer__subscribe-input"
+           required
+           placeholder="Email"
+           inputmode="email">
+    <button type="submit"
+            class="footer__subscribe-button"
+            disabled>Subscribe</button>
+  </div>
+</form>
           </div>
           <div class="footer__bottom">
             <p class="footer__copy">© Estate, LLC. All rights reserved. Powered by Webflow.</p>
@@ -240,6 +323,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/inputmask.min.js"></script>
 <script src="js/main.js"></script>
   </body>
 

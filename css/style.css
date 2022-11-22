@@ -179,6 +179,7 @@ a {
   --color__grey-2: #caccd1;
   --color__grey-3: #292c32;
   --color__grey-4: #444444;
+  --color__grey-5: #6F7278;
   --color__yellow:#ffe736;
   --color__bg: rgba(250, 250, 252, 0.78);
   --color__white: #ffffff;
@@ -523,7 +524,126 @@ to{
 .footer__logo-link:active{
   color: var(--color__yellow);
 }
-.footer__inner{}
+
+.footer__inner {display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-top: 4.75rem;
+}
+
+.footer__menu {
+  flex: 0 1 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__menu-item {}
+
+.footer__menu-item + .footer__menu-item {
+  margin-left: 1rem;
+}
+.footer__menu-title,.footer__subscribe-title{
+color: var(--color__orange-1);
+text-transform: uppercase;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0.125rem;
+}
+
+.footer__menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.footer__list-item{}
+.footer__list-item+.footer__list-item{
+  margin-top: 0.5rem;
+}
+
+.footer__menu-link {
+  color: var(--color__white);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer__menu-link:hover{
+  color: var(--color__orange-1);
+}
+.footer__menu-link:focus{
+  outline: transparent;
+}
+.footer__menu-link:focus-visible{
+  text-decoration: underline;
+}
+.footer__menu-link:active{
+  color: var(--color__orange-2);
+}
+
+.footer__subscribe {
+  flex: 0 0 28.5rem;
+  margin-left: 8.75rem;
+}
+.footer__subscribe-title {}
+
+.footer__subscribe-text {
+margin-top: 0.5rem;
+font-size: 1.25rem;
+}
+.footer__subscribe-wrapper {
+  margin-top: 0.75rem;
+  position: relative;
+}
+.footer__subscribe-input {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--color__white);
+  border-radius: .5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.footer__subscribe-input::placeholder{
+  color: var(--color__grey-5);
+}
+
+.footer__subscribe-button{
+  appearance: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color__grey-3);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color__white);
+  border: none;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.footer__subscribe-button:hover{
+  background-color: var(--color__orange-1);
+}
+.footer__subscribe-button:focus{
+  outline: transparent;
+}
+.footer__subscribe-button:focus-visible{
+  outline: 2px solid var(--color__orange-2);
+}
+.footer__subscribe-button:active{
+  background-color: var(--color__orange-2);
+}
+.footer__subscribe-button:disabled{
+  cursor: default;
+  background-color: var(--color__grey-2);
+}
 
 .footer__bottom{
 margin-top: 1.75rem;
