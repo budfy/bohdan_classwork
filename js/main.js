@@ -26,3 +26,19 @@ function checkMaskEmail() {
   im.mask(input);
 }
 checkMaskEmail();
+function topbarChange() {
+  window.addEventListener('scroll', change)
+
+  function change(e) {
+    const topbar = document.querySelector('.top-bar');
+    let top = window.scrollY;
+    let height = window.screen.availHeight / 4;
+
+    if (top >= height) {
+      topbar.classList.add('--scrolled');
+    } else {
+      topbar.classList.remove('--scrolled');
+    }
+  }
+}
+topbarChange();
